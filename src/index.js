@@ -5,6 +5,10 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 
+import './fonts/Amasis.otf'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 ReactDOM.render(
   <Router>
     <App />

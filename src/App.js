@@ -6,6 +6,7 @@ import Activities from "./pages/Activities";
 import SingleActivity from "./pages/SingleActivity";
 import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
+import Hero from "./components/Hero";
 
 import Navbar from "./components/Navbar";
 

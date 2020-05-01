@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 export default class Navbar extends Component {
     
   handleToggle = () => {
-    const nav = document.querySelector(".nav-links");
-    const navLinks = document.querySelectorAll(".nav-links li");
+    const nav = document.querySelector(".my-nav-links");
+    const navLinks = document.querySelectorAll(".my-nav-links li");
 
-    nav.classList.toggle("nav-active");
+    nav.classList.toggle("my-nav-active");
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = "";
@@ -21,24 +21,27 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav>
+      <nav className="my-navbar">
         <Link to="/">
-          <img src={logo} className="logo" alt="hotel-logo" />
+          <img src={logo} className="my-logo" alt="hotel-logo" />
         </Link>
-        <ul className="nav-links">
+        <ul className="my-nav-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">HOME</Link>
           </li>
           <li>
-            <Link to="/activities">Activities</Link>
+            <Link to="/login">ABOUT</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <Link to="/activities">ACTIVITIES</Link>
+          </li>
+          <li>
+            <Link to="/login">LOGIN</Link>
           </li>
         </ul>
-        <div className="burger">
-          <button type="button" className="nav-btn" onClick={this.handleToggle}>
-            <FaBars className="nav-icon" />
+        <div className="my-burger">
+          <button type="button" className="my-nav-btn" onClick={this.handleToggle}>
+            <FaBars className="my-nav-icon" />
           </button>
         </div>
       </nav>
