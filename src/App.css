@@ -6,19 +6,20 @@
 
 /* ---------------------------------------------------------------- NAVBAR --------------------------------------------------------------*/
 
-.my-navbar{
+.my-navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
   background-color: #ececec;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   z-index: 1;
 }
 
-.my-logo{
-    max-height: 60px;
-    width: auto;
+.my-logo {
+  max-height: 60px;
+  width: auto;
 }
 
 .my-nav-links {
@@ -33,7 +34,7 @@
 }
 
 .my-nav-links a {
-  color:#4d4d4d;
+  color: #4d4d4d;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -42,7 +43,7 @@
 }
 
 .my-nav-links a:hover {
-    color: black;
+  color: black;
 }
 
 .my-burger {
@@ -58,7 +59,7 @@
 
 .my-nav-icon {
   font-size: 20px;
-  color:#4d4d4d;;
+  color: #4d4d4d;
 }
 
 @media screen and (max-width: 1024px) {
@@ -108,15 +109,15 @@
   }
 }
 
-.hero-container{
+.hero-container {
   position: relative;
 }
 
-.carousel{
+.carousel {
   z-index: -1;
 }
 
-.hero-banner{
+.hero-banner {
   float: left;
   background-color: rgb(0, 0, 0, 0.4);
   height: fit-content;
@@ -129,26 +130,31 @@
   margin-left: 13vw;
 }
 
-.hero-banner h1, h4{
+.hero-banner h1,
+h4 {
   font-weight: 300;
   letter-spacing: 4px;
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.hero-banner h1{
+.hero-banner h1 {
   font-size: 5vw;
 }
 
-.hero-banner h4{
+.hero-banner h4 {
   font-size: 1vw;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
 .about-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
   column-gap: 100px;
   margin-bottom: 50px;
+  padding: 0 15vw;
 }
 
 .about-title {
@@ -164,113 +170,267 @@
   font-family: Amasis;
 }
 
-.left{
-  padding-left: 15vw;
-}
-
-.right{
-  padding-right: 15vw;
-}
-
-.about-container p{
+.about-container p {
   font-family: Amasis;
   color: #696969;
 }
 
-@media screen and (max-width: 626px){
-  .left{
-    padding-right: 15vw;
-  }
-  .right{
-    padding-left: 15vw;
-  }
-}
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 
-.home-images-container{
+.home-images-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.home-images-container img{
+.home-images-container img {
   object-fit: cover;
   width: 100%;
 }
 
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 
+.activity-container-left {
+  display: flex;
+  padding: 40px 0;
+}
 
-
-.activity-container {
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  padding-left: 1vw;
+.activity-container-right {
+  display: flex;
+  padding: 40px 0;
   background-color: #ececec;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 3vw;
 }
 
-.activity-container img {
-  margin-left: 5vw;
-  object-fit: cover;
-  width: auto;
+.activity-img {
+  max-width: 40vw;
 }
-
 
 .activity-description {
-  font-family: Arial, Helvetica, sans-serif;
-  object-fit: cover;
-  width: 100%;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .activity-description h3 {
-  position: relative;
-  left: 8vw;
-  font-size: 5vw;
+  font-size: 3.5vw;
   font-family: Amasis;
 }
 
-.activity-description .details {
-  position: relative;
-  width: 40%;
-  top: 8vw;
-  left: 12vw;
+.details {
+  font-size: 1.2vw;
+  font-family: Amasis;
+  color: #696969;
+  padding: 0 4vw;
 }
 
-.activity-description p{
-  font-size: 0.9vw;
+.details-link {
+  align-self: flex-end;
+  padding-right: 4vw;
 }
 
-.activity-description .details h6{
-  letter-spacing: 0.7vw;
-  font-size: 0.7vw;
+.details-link a {
+  color: #4d4d4d;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: Amasis;
+  font-size: 1.2vw;
+}
+
+.details-link a:hover {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .activity-container-left {
+    display: flex;
+    flex-direction: column;
+    background-color: #ececec;
+    padding: 5px 0;
+  }
+
+  .activity-container-right {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .activity-img {
+    max-width: 100%;
+  }
+
+  .activity-description {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .activity-description h3 {
+    font-size: 4vw;
+    font-family: Amasis;
+  }
+
+  .details {
+    font-size: 2.2vw;
+    font-family: Amasis;
+    color: #696969;
+    padding: 0 4vw;
+  }
+
+  .details-link {
+    align-self: center;
+    padding-right: 0;
+  }
+
+  .details-link a {
+    color: #4d4d4d;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: Amasis;
+    font-size: 2.2vw;
+  }
+
+  .details-link a:hover {
+    color: #4d4d4d;
+    text-decoration: none;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+  background: #4d4d4d;
+  padding: 5vh;
+  text-align: center;
+}
+
+.footer-logo {
+  max-height: 100px;
+  width: auto;
+}
+
+.footer-links-div {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.footer-navlinks li {
+  list-style: none;
+  display: inline;
+  margin: 3vw;
+}
+
+.footer-navlinks a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
   font-weight: bold;
-  margin-bottom: 1.2vw;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 
-.activity-link{
-  width: 100%;
+.footer-navlinks a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-icon {
+  color: white;
+  font-size: 30px;
+}
+
+.footer-icons li {
+  list-style: none;
+  display: inline;
+  margin: 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.featured-desc {
   display: flex;
-  align-items: center;
+  padding: 8vw 15vw;
+  background-color: #ececec;
 }
 
-.activity-link a{
-  color: black;
-  letter-spacing: 0.7vw;
-  font-size: 0.7vw;
+.featured-title h6 {
+  font-size: 12px;
+  font-family: Amasis;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.featured-title h1 {
+  font-size: 80px;
+  font-family: Amasis;
+}
+
+.featured-text {
+  margin-left: 10vw;
+  margin-top: 5vw;
+  font-family: Amasis;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px){
+  .featured-desc {
+    display: flex;
+    flex-direction: column;
+    background-color: #ececec;
+  }
+.featured-title h1{
+  font-size: 10vw;
+}
+.featured-text{
+  font-size: 15px;
+}
+}
+
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2.5%;
+  grid-auto-rows: 27%;
+  padding: 0 60px;
+  background-color: #ececec;
+  padding-bottom: 60px;
+}
+
+.gridimg {
+  max-width: 100%;
+}
+
+.gridtextcontainer {
+  padding: 10px 0;
+}
+
+.gridcontainer a {
+  color: #4d4d4d;
+}
+
+.gridcontainer a:hover{
   text-decoration: none;
+  color: #4d4d4d;
 }
 
-.activity-link a:hover{
-  text-decoration: none;
-  color: black;
+.gridtextcontainer h3, p {
+  font-family: Amasis;
+  padding-top: 10px;
+} 
+
+.griddate{
+  display: flex;
+  justify-content: space-between;
 }
 
+.griddate .details-link {
+  padding: 0;
+  justify-self: flex-end;
+}
 
+@media screen and (max-width: 800px){
 
-
-
-
-
-
-
-
+}
